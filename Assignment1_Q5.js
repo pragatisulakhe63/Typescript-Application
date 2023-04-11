@@ -1,0 +1,17 @@
+/* Write a typescript which contains one function named as Fibonacci.
+That function accept one number from user and print Fibonacci series till that number. */
+function Fibonacci(No) {
+    var Num;
+    var No1 = 0;
+    var No2 = 1;
+    for (var i = 1; i < No; i++) {
+        console.log(No1);
+        var Num = No1 + No2;
+        No1 = No2;
+        No2 = Num;
+        if (No1 > No) {
+            break;
+        }
+    }
+}
+Fibonacci(21);
